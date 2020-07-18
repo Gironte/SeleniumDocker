@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  seleniumindocker:
+    image: ${DOCKER_REGISTRY-}seleniumindocker
+    build:
+      context: .
+      dockerfile: SeleniumInDocker/Dockerfile
